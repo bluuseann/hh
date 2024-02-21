@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\1984.jpg" />
+    <None Remove="image\basket.png" />
+    <None Remove="image\club.jpg" />
+    <None Remove="image\delet.png" />
+    <None Remove="image\god.jpg" />
+    <None Remove="image\kniggas.png" />
+    <None Remove="image\little.jpg" />
+    <None Remove="image\logo.png" />
+    <None Remove="image\master.jpg" />
+    <None Remove="image\portret.jpg" />
+    <None Remove="image\romeo.jpg" />
+    <None Remove="image\world.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\1984.jpg" />
+    <Resource Include="image\basket.png" />
+    <Resource Include="image\club.jpg" />
+    <Resource Include="image\delet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\god.jpg" />
+    <Resource Include="image\kniggas.png" />
+    <Resource Include="image\little.jpg" />
+    <Resource Include="image\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\master.jpg" />
+    <Resource Include="image\portret.jpg" />
+    <Resource Include="image\romeo.jpg" />
+    <Resource Include="image\world.jpg" />
+  </ItemGroup>
+
+</Project>
